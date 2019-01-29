@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates');
+body{
+	overflow-x: hidden;
+	font-family: 'Montserrat Alternates',sans-serif;
+	color: #505962;
+}
+/*Navigation--*/
+.navbar{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .9rem;
+	letter-spacing: .1rem;
+	background-color: rgba(0, 0, 0, 0.7) !important;
+}
+.navbar-brand img{
+	height: 5vh;
+}
+.navbar-nav li{
+	padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link{
+	color: white;
+	padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: orange;
+}
+/*Landing Page-*/
+.home-inner{
+	background-image: url(img/cc1.png);
+}
+.caption img{
+	padding-bottom: 10rem;
+}
+.caption{
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 10%;
+	z-index: 1;
+	color: white;
+	text-transform: uppercase;
+}
+.caption h1{
+	font-size: 3.5rem;
+	font-weight: 450;
+	letter-spacing: .3rem;
+	font-family: 'Lobster', cursive;
+	text-shadow: .1rem .1rem .8rem black;
+	padding-bottom: 1rem;
+}
+.caption h3{
+	font-size: 2rem;
+	text-shadow: .1rem .1rem .5rem black;
+	padding-bottom:1.6rem;
+}
+.btn-lg{
+	border-width: medium;
+	border-radius: 0;
+	padding: .6rem 1.3rem;
+	font-size: 1.1rem;
+}
+/*Course Section*/
+.narrow{
+	width: 75%;
+	margin: 1.5rem auto;
+	padding-top: 2rem;
+}
+.narrow h1{
+	font-size: 2.4rem;
+	color: #e8491d;
+}
+.narrow p{
+	text-align: justify;
+}
+/*-WhY section-*/
+.fixed{
+	background-image: url(img/cc.jpg);
+	z-index: -1;
+}
+.dark{
+	background-color: rgba(0, 0, 0, 0.75);
+	color: white;
+	padding: 7rem 2rem;
+}
+.fixed-background h2{
+	margin-bottom: 2rem;
+	color: orange;
+}
+.fixed-background p{
+	text-align: justify;
+}
+/*-About-*/
+.testimonial{
+	padding-top: 90px;
+	background:#e5e5e5;
+	color: #e8491d;
+	text-align: center;
+}
+.testimonials{
+	margin: 200px auto 100px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+	grid-gap: 20px;
+	padding-bottom: 40px;
+}
+.testimonials .card{
+	position: relative;
+	width: 350px;
+	margin: 0 auto;
+	background:white;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+	overflow: hidden; 
+}
+.testimonials .card .layer{
+	position: absolute;
+	top: calc(100% - 2px);
+	left: 0;
+	width: 100%;
+	height: 100;
+	background:linear-gradient(#03a9f4,#e91ee3);
+	z-index: 1;
+	transition: 0.5s;
+}
+.testimonials .card .content{
+	position: relative;
+	z-index: 2;	
+}
+.testimonials .card .content p{
+	font-size: 18px;
+	line-height: 24px;
+	color: black;
+}
+.testimonials .card .content .image{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 3px solid white;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.testimonials .card .content h2{
+	font-size: 18px;
+	color: black;
+}
+.testimonials .card .content .details h2 span{
+	color: #e8491d;
+	font-size: 14px;
+	transition: 0.5s;
+}
+.testimonials .card:hover{
+	border: 2px solid orange;
+}
+/*-contact-*/
+footer{
+	background-color: #110f0f;
+	color: white;
+	padding: 2rem 0 2rem;
+	margin-top: 1rem;
+}
+footer img{
+	height:3.2rem;
+	margin: 1.5rem 0;
+}
+footer svg.svg-inline--fa{
+	font-size: 1.6rem;
+	color: white;
+	margin: 1.2rem .5rem 0 0;
+}
+footer svg.svg-inline--fa:hover{
+	color: #e8491d!important;
+}
+hr.socket{
+	width: 100%;
+	border-top: .2rem solid #332d2b;
+}
+/*-Media Queries--*/
+@media (max-width: 767px){
+	.caption h1{
+	font-size: 2.3rem;
+	letter-spacing: .15rem;
+	text-shadow: .1rem .1rem .3rem black;
+	padding-bottom: .5rem;
+    }
+	.caption h3{
+	font-size: 1.2rem;
+	text-shadow: .1rem .1rem .1rem black;
+	padding-bottom:1.2rem;
+	}
+	.btn-lg{
+	padding: .5rem 1rem;
+	font-size: 1rem;
+	}	
+}
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
